@@ -1,2 +1,2 @@
-# exercicios_em_python
+# Exercicios em Python!
  Exercícios feitos por mim na linguagem de programação Python.
