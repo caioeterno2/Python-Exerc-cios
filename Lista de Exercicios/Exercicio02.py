@@ -13,7 +13,7 @@ resp2 = str(input('B <- 4/(2+2)/4  e  B <- 4/2 + 2/4: '))
 resp3 = str(input('c <- (4+2) * 2-4  e  C <- 4+2 * 2-4: '))
 
 print('_________________________________________')
-print('Resposta:')
+print('Resp:')
 
 v = True
 f = False
