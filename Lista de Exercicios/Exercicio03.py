@@ -1,6 +1,8 @@
 '''
 Escreva um algoritmo para ler um valor e mostrar seu antecessor e sucessor.
 '''
+print('| Antecessor e Sucessor |')
+print('=========================')
 
 val = int(input('Digite um valor inteiro: '))
 print('________________________')
