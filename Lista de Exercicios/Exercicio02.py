@@ -1,7 +1,7 @@
 '''
 Crie um algoritmo que mostre se os pares abaixo tem o mesmo resultado.
 '''
-print('| Igual ou Diferente |')
+print('| IGUAL OU DIFERENTE |')
 print('======================')
 
 print('Os pares abaixo tem o mesmo resultado? [s/n] ')
