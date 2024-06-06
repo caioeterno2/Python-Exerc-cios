@@ -1,5 +1,5 @@
 '''
-Escreva um algoritmo que leia o custo de fábrica de um carro junto com a % do distribuidor e dos imostos e escreva o custo final ao consumidor
+Escreva um algoritmo que leia o custo de fábrica de um carro junto com a % do distribuidor e dos impostos e escreva o custo final ao consumidor
 '''
 print(' ==================')
 print(' | CUSTO DO CARRO |')
