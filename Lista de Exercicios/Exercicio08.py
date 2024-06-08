@@ -15,7 +15,7 @@ print(' -----------------------------')
 vtv = cv * ccv 
 porc_5 = vtv * (5 / 100)
 vtv_f = vtv + porc_5
-sfi = sf + vtv + porc_5
+sfi = sf + vtv_f
 
 print(' Carros vendidos: {}'.format(cv))
 print(' Comissão por carro vendido: R${:.2f}'.format(ccv))
