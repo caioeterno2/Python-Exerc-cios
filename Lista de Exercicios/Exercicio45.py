@@ -12,5 +12,5 @@ print(' Valores inteiros entre 1 e {}.'.format(val))
 for cont in range(1,val + 1):
     print('',cont)
 
-print('=====================')
+print(' =====================')
     
