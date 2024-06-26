@@ -13,5 +13,4 @@ cem_1 = 101
 for cont in range(cem_1,111):
     print('',cont)
 
-print(' Fim.')
 print(' ===============')
