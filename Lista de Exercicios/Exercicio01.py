@@ -6,10 +6,10 @@ print(' ====================')
 print(' | TROCA DE VALORES |')
 print(' ====================')
 
-val_1 = int(input(' 1* Posição: '))
+val_1 = float(input(' 1* Posição: '))
 print(' - - - - - -')
 
-val_2 = int(input(' 2* Posição: '))
+val_2 = float(input(' 2* Posição: '))
 print(' ====================')
 
 troca = val_2 
