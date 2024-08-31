@@ -1,15 +1,20 @@
 '''
- Um algoritmo que armazene à variável "A" o valor "10" e para variável "B" o valor "20". A seguir troque os valores dessas variáveis entre si escrevendo o resultado na tela.
+ Trocar os valores de duas variáveis. - Ex. N° 1
 '''
-print('| TROCA DE VALORES |')
-print('====================')
 
-a = int(input('A = '))
-b = int(input('B = '))
-print('_________')
+print(' ====================')
+print(' | TROCA DE VALORES |')
+print(' ====================')
 
-troca = a 
-a = b
+val_1 = int(input(' 1* Posição: '))
+print(' - - - - - -')
 
-print('A = ',a)
-print('B = ',int(troca))
+val_2 = int(input(' 2* Posição: '))
+print(' ====================')
+
+troca = val_2 
+val_2 = val_1
+
+print(f' 1* -> {troca} | 2* -> {val_2}')
+
+print(' ====================')
