@@ -1,18 +1,19 @@
 '''
-Escreva um algoritmo que leia um valor e informe se é maior ou menor que 10 
+ Leia um valor e informe se é maior ou menor que 10. - Ex. N° 14 
 '''
-print(' =========================')
-print(' | MAIOR OU MENOR QUE 10 |')
-print(' =========================')
 
-val = float(input(' Digite um valor: '))
-print(' -------------------------')
+print(' =================')
+print(' | > OU < QUE 10 |')
+print(' =================')
+
+val = int(input(' Digite um valor (inteiro): '))
+print(' = = = = = = = = =')
 
 if val > 10:
-   print(' O número {:.0f} é maior que 10'.format(val))
+   print(f' O número {val} é maior que 10')
 elif val == 10:
     print(' Você digitou o número 10')
 else:
-    print(' O número {:.0f} é menor que 10'.format(val))
+    print(f' O número {val} é menor que 10')
 
-print(' =========================')
+print(' =================')
