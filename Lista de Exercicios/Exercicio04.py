@@ -1,13 +1,17 @@
 '''
-Escreva um algoritmo que calcule e escreva a área de retângulo. 
+ Calcule e escreva a área de um retângulo. - Ex. N° 6
 '''
-print('| ÁREA DO RETÂNGULO |')
-print('=====================')
 
-base = float(input('Quanto mede a base do retângulo (metros): '))
-alto = float(input('Quanto mede a altura do retângulo (metros): '))
-print('_______________________________')
+print(' =====================')
+print(' | ÁREA DO RETÂNGULO |')
+print(' =====================')
+
+base = float(input(' Base do retângulo (metros): '))
+print(' - - - - - -')
+alto = float(input(' Altura do retângulo (metros): '))
+print(' = = = = = = = = = = =')
 
 area = base * alto
 
-print('A área desse retângulo é de',area,'m2')
+print(f' A área do retângulo é de {area} m2')
+print(' =====================')
