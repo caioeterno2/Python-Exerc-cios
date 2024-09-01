@@ -1,20 +1,21 @@
 '''
-Escreva um algoritmo que leia o custo de fábrica de um carro junto com a % do distribuidor e dos impostos e escreva o custo final ao consumidor
+ Leia o custo de fábricação de um carro, junto com a % do distribuidor dos impostos e escreva o custo final ao consumidor. - Ex. N° 10
 '''
+
 print(' ====================')
 print(' | CUSTO DO VEÍCULO |')
 print(' ====================')
 
-cf = float(input(' Informe o custo de fabricação do veiculo: R$'))
-print(' -----')
-pd = float(input(' Informe a porcentagem do distribuidor: %'))
-print(' -----')
-ip = float(input(' Informe a porcentagem do imposto: %'))
-print(' ------------------')
+custo_fab = float(input(' Informe o custo de fabricação do veiculo: R$'))
+print(' - - - - - - - - - - ')
+porc_dist = float(input(' Informe a porcentagem do distribuidor: %'))
+print(' - - - - - - - - - - ')
+porc_imp = float(input(' Informe a porcentagem do imposto: %'))
+print(' = = = = = = = = = = ')
 
-porc_pd = cf * (pd / 100)
-porc_ip = cf * (ip / 100)
-val_final = cf + porc_pd + porc_ip
+porc_distri = custo_fab * (porc_dist / 100)
+porc_impos = custo_fab * (porc_imp / 100)
+val_final = custo_fab + porc_distri + porc_impos
 
-print(' O veiculo será repassado ao consumidor com o valor total de R${:.3f}'.format(val_final))
+print(f' O veiculo será repassado ao consumidor com o valor total de R${val_final:.2f} reais.')
 print(' ====================')
