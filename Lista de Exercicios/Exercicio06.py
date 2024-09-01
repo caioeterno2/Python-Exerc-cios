@@ -1,17 +1,18 @@
 '''
-Escreva um algoritmo para ler o salário de um funcionário e o percentual do reajuste e mostrar o novo salário  
+ Leia o salário de um funcionário o percentual do reajuste e mostre o novo salário. - Ex. N° 9  
 '''
+
 print(' =====================')
 print(' | REAJUSTE SALARIAL |')
 print(' =====================')
 
-sala = float(input(' Informe o salário atual do funcionário: R$'))
-print(' ----')
-porc = int(input(' Informe quanto será o percentual de reajust: %'))
-print(' ----------------------')
+salario = float(input(' Salário do funcionário: R$'))
+print(' - - - - - - - - - - -')
+porc = int(input(' Percentual de reajuste: %'))
+print(' = = = = = = = = = = =')
 
-Nporc = sala * (porc / 100)
-Nsala = sala + Nporc 
+porc_salario = salario * (porc / 100)
+novo_salario = salario + porc_salario 
 
-print(' O salário que antes era de R${:.2f} com o reajuste de {:.0f}% vai passar a ser de R${:.2f}'.format(sala,porc,Nsala))
+print(f' O salário de R${salario:.2f} reais, com o reajuste de {porc}% vai passar a ser de R${novo_salario:.2f} reais.')
 print(' =====================')
