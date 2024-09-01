@@ -1,19 +1,24 @@
 '''
-Escreva um algotitmo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade em dias 
+ Leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade em dias. - Ex. N° 7 
 '''
-print('| IDADE EM DIAS |')
-print('=================')
 
-print('Adicione as informações abaixo:')
-ano = int(input('ANOS: '))
-mes = int(input('MESES: '))
-dia = int(input('DIAS: '))
-print('_________________')
+print(' =================')
+print(' | IDADE EM DIAS |')
+print(' =================')
 
-ano_d = 365 * ano
-mes_d = 30 * mes
+print(' Preencha as informações abaixo: ')
+print(' = = = = = = = = =')
+anos = int(input(' ANOS: '))
+print(' - - -')
+meses = int(input(' MESES: '))
+print(' - - -')
+dias = int(input(' DIAS: '))
+print(' = = = = = = = = =')
 
-idade_dia = ano_d + mes_d + dia
+ano_dia = 365 * anos
+mes_dia = 30 * meses
 
-print('Com base nas informações sua idade convertida em dias é de',idade_dia,'dias de vida.')
-print('=================')
+idade_dia = ano_dia + mes_dia + dias
+
+print(f' A idade convertida em dias é de {idade_dia} dias de vida.')
+print(' =================')
