@@ -1,14 +1,16 @@
 '''
-Escreva um algoritmo para ler um valor e mostrar seu antecessor e sucessor.
+ Leia o antecessor e sucessor de um valor. - Ex. N° 5
 '''
-print('| ANTECESSOR E SUCESSOR |')
-print('=========================')
 
-val = int(input('Digite um valor inteiro: '))
-print('________________________')
+print(' =========================')
+print(' | ANTECESSOR E SUCESSOR |')
+print(' =========================')
 
-ante = val - 1
-suce = val + 1
+val = int(input(' Digite um valor (inteiro): '))
+print(' = = = = = = = = = = = = ')
 
-print('.Seu ANTECESSOR é',ante)
-print('.Seu SUCESSOR é',suce)
+antes = val - 1
+depois = val + 1
+
+print(f' Valor: {val}  ->  Antecessor: {antes}  -  Sucessor: {depois}')
+print(' =========================')
