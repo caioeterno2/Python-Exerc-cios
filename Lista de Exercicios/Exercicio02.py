@@ -1,39 +1,39 @@
 '''
-Crie um algoritmo que mostre se os pares abaixo tem o mesmo resultado.
+ Mostre se os pares tem o mesmo resultado. - Ex. N° 3   | RESOLVER JOÃO |
 '''
-print('| IGUAL OU DIFERENTE |')
-print('======================')
 
-print('Os pares abaixo tem o mesmo resultado? [s/n] ')
+print(' ======================')
+print(' | IGUAL OU DIFERENTE |')
+print(' ======================')
 
-resp1 = str(input('A <- (4/2) + (2/4)  e  A <- 4/2 + 2/4: '))
+print(' Os pares abaixo tem o mesmo resultado: [S/N]')
+print(' = = = = = = = = = = = = = = = = = = = = = = =')
 
-resp2 = str(input('B <- 4/(2+2)/4  e  B <- 4/2 + 2/4: '))
+resp_1 = str(input(' Questão N° 1 - A <- (4/2) + (2/4)  =  a <- 4/2 + 2/4: '))
+print(' - - - - - - - ')
 
-resp3 = str(input('c <- (4+2) * 2-4  e  C <- 4+2 * 2-4: '))
+resp_2 = str(input(' Questão N° 2 - B <- 4/(2+2)/4  =  b <- 4/2 + 2/4: '))
+print(' - - - - - - - ')
 
-print('_________________________________________')
-print('Resp:')
+resp_3 = str(input(' Questão N° 3 - C <- (4+2) * 2-4  =  c <- 4+2 * 2-4: '))
+print(' ======================')
 
-v = True
-f = False
+acertou = 'Acertou.'
+errou = 'Errou.'
 
-if resp1 == 's' or 'S':
-    print('A <- (4/2) + (2/4)  e  A <- 4/2 + 2/4: ',v)
+if resp_1 == 's' or 'S':
+    print(f' 1* Resposta: {acertou}') 
 else:
-    print('A <- (4/2) + (2/4)  e  A <- 4/2 + 2/4: ',f)
+    print(f' 1* Resposta: {errou}')
 
-if resp2 == 'n' or 'N':
-    print('B <- 4/(2+2)/4  e  B <- 4/2 + 2/4: ',v)
+if resp_2 == 'n' or 'N':
+    print(f' 2* Resposta: {acertou}')
 else: 
-    print('B <- 4/(2+2)/4  e  B <- 4/2 + 2/4: ',f)
+    print(f' 2* Resposta: {errou}')
 
-if resp3 == 'n' or 'N':
-    print('c <- (4+2) * 2-4  e  C <- 4+2 * 2-4: ',v)
+if resp_3 == 'n' or 'N':
+    print(f' 3* Resposta: {acertou}')
 else:
-    print('c <- (4+2) * 2-4  e  C <- 4+2 * 2-4: ',f)
+    print(f' 3* Resposta: {errou}')
 
-
-
-
-
+print(' ======================')
