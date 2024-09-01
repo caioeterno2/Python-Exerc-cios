@@ -1,29 +1,32 @@
 '''
-Escreva um algoritmo que leia o número de carros vendidos por um funcionário, o valor total de suas vendas, seu salário fixo, valor recebido por cada carro vendido e seu salário final. 
+ Leia o número de carros vendidos por um funcionário, o valor total de suas vendas, seu salário mensal, valor recebido por cada carro vendido e seu salário final. - Ex. N° 11
 '''
+
 print(' =============================')
 print(' | SALÁRIO T. DO FUNCIONÁRIO |')
 print(' =============================')
 
-cv = int(input(' Informe quantos carros foram vendidos pelo funcionário: '))
-print(' -----')
-sf = float(input(' Informe o salário fixo do funcionário: '))
-print(' -----')
-ccv = float(input(' Informe a comissão fixa recebida por cada carro vendido: '))
-print(' -----------------------------')
+nome = str(input(' Nome do funcionário: '))
+print(' = = = = = = = = = =')
 
-vtv = cv * ccv 
-porc_5 = vtv * (5 / 100)
-vtv_f = vtv + porc_5
-sfi = sf + vtv_f
+car_venda = int(input(f' Quantos carros foram vendidos por {nome}: '))
+print(' - - - - - - - - - -')
+salario_mes = float(input(f' Salário mensal de {nome}: R$'))
+print(' - - - - - - - - - -')
+comi_venda = float(input(' Comissão recebida por cada carro vendido: R$'))
+print(' = = = = = = = = = =')
 
-print(' Carros vendidos: {}'.format(cv))
-print(' Comissão por carro vendido: R${:.2f}'.format(ccv))
-print(' Valor total das vendas: R${:.2f}'.format(vtv_f))
-print(' Salário fixo: R${:.2f}'.format(sf))
-print(' Salário final: R${:.2f}'.format(sfi))
+valor_Tvendas = car_venda * comi_venda 
+porc_5 = valor_Tvendas * (5 / 100)
+valor_final = valor_Tvendas + porc_5
+novo_salario = salario_mes + valor_final
+
+print(f' N° carros vendidos: {car_venda}')
+print(' -  -  -  -  -  -  -')
+print(f' Comissão por cada venda: R${comi_venda:.2f} reais.')
+print(' - - - - - - - - - -')
+print(f' Valor total das vendas: R${valor_Tvendas:.2f} reais.')
+print(' = = = = = = = = = =')
+print(f' Salário f. mensal: R${salario_mes:.2f} reais')
+print(f' Salário final: R${novo_salario:.2f} reais')
 print(' =============================')
-
-
-
-
