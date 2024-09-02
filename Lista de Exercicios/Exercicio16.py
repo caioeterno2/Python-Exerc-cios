@@ -1,20 +1,21 @@
 '''
-Escreva um algoritmo que leia dois valores e escreva o maior deles
+ Leia dois valores e escreva o maior deles. - Ex. N° 19
 '''
+
 print(' ===============')
-print(' | VALOR MAIOR |')
+print(' | MAIOR VALOR |')
 print(' ===============')
 
-val1 = float(input(' Digite um valor: '))
-print(' -----')
-val2 = float(input(' Digite um segundo valor: '))
-print(' ---------------')
+val_1 = int(input(' 1* valor: '))
+print(' - - - - -')
+val_2 = int(input(' 2* valor: '))
+print(' = = = = = = = =')
 
-if val1 > val2:
-    print(' O número {:.0f} é maior que o número {:.0f}.'.format(val1,val2))
-elif val1 == val2:
-    print(' Os números são iguais.')
+if val_1 > val_2:
+    print(f' Número {val_1} maior que {val_2}')
+elif val_1 == val_2:
+    print(' Números são iguais.')
 else:
-    print(' O número {:.0f} é maior que o número {:.0f}.'.format(val2,val1))
+    print(f' Número {val_2} maior que {val_1}')
 
 print(' ===============')
