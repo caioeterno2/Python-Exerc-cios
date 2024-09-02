@@ -1,20 +1,20 @@
 '''
-Escreva um algoritmo que leia o ano que uma pessoa nasceu e escreva se ela pode ou não votar.
+ Leia o ano que uma pessoa nasceu e escreva se pode ou não votar. - Ex. N° 18
 '''
-print(' ===================')
-print('  | Idade p/ votar |')
-print(' ===================')
+print(' ==================')
+print(' | IDADE P/ VOTAR |')
+print(' ==================')
 
-ano_nasc = int(input(' Informe o ano que você nasceu: '))
-print(' ----')
-ano_atu = int(input(' Informe o ano atual: '))
-print(' -------------------')
+ano_nasc = int(input(' Ano de nascimento: '))
+print(' - - - - - - - - - ')
+ano_atual = int(input(' Ano atual: '))
+print(' = = = = = = = = = ')
 
-idade = ano_atu - ano_nasc
+idade = ano_atual - ano_nasc
 
 if idade >= 18:
-    print(' Com a idade atual de {} anos seu voto é obrigatório.'.format(idade))
+    print(f' Com {idade} anos seu voto é obrigatório.')
 else:
-    print(' Com a idade atual de {} anos você ainda não pode votar.'.format(idade))
+    print(f' Com {idade} anos você ainda não pode votar.')
 
-print(' ===================')
+print(' ==================')
