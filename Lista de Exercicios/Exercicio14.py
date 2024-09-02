@@ -1,20 +1,24 @@
 '''
-Escreva um algoritmo que leia as notas de um aluno e escreva sua média e se ele foi aprovado ou não
+ Leia as notas de um aluno, escreva sua média e mostre se ele foi aprovado ou não. - Ex. N° 17
 '''
+
 print(' ==================')
 print(' | MÉDIA DO ALUNO |')
 print(' ==================')
 
-not1 = float(input(' Informe a primeira nota do aluno: '))
-print( ' ----')
-not2 = float(input(' Informe a seggunda nota do aluno: '))
-print(' ------------------')
+nome = str(input(' Nome do(a) aluno(a): '))
+print(' = = = = = = = = = ')
 
-media = (not1 + not2) / 2
+nota_1 = float(input(' 1* nota: '))
+print(' - - - -')
+nota_2 = float(input(' 2* nota: '))
+print(' = = = = = = = = = ')
+
+media = (nota_1 + nota_2) / 2
 
 if media >= 6:
-    print(' Sua média final foi {} e você está APROVADO.'.format(media))
+    print(f' A média de {nome} foi de {media} - APROVADO(A)')
 else:
-    print(' Sua média final foi {} e você está REPROVADO.'.format(media))
+    print(f' A média de {nome} foi de {media} - REPROVADO(A)')
 
 print(' ==================')
