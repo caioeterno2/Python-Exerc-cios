@@ -1,21 +1,22 @@
 '''
-Escreva um algoritmo que leia a quantidade de maçãs compradas e escreva o valor total. Sabendo que ate 11 unidades elas saem por R$1.30 e uma duzia em diante por R$1.00. (coloquei um desconto a mais)
+ Leia a quantidade de maçãs compradas e escreva o valor total. - Ex. N° 16
 '''
+
 print(' ===================')
 print(' | VALOR DAS MAÇÃS |')
 print(' ===================')
 
-quant = int(input(' Quantas maçãs seriam: '))
-print(' -----')
+num_maças = int(input(' Número de maçãs: '))
+print(' - - - - - - - - - -')
 
-if quant <= 11:
-    val_nor = quant * 1.30
-    print(' Levando {} maçãs você vai pagar R${:.2f}'.format(quant,val_nor))
-elif quant >= 12 and quant <= 23:
-    val_pro = quant * 1.00
-    print(' Levando {} maçãs você vai pagar R${:.2f}'.format(quant,val_pro))
-elif quant >= 24:
-    val_des = quant * 0.80
-    print(' Levando {} maçãs você vai pagar R${:.2f}'.format(quant,val_des))
+if num_maças <= 11:
+    val_normal = num_maças * 1.30
+    print(f' Levando {num_maças} maçãs você vai pagar R${val_normal:.2f} reais.')
+elif num_maças >= 12 and num_maças <= 23:
+    val_promo = num_maças * 1.00
+    print(f' Levando {num_maças} maçãs você vai pagar R${val_promo:.2f} reais.')
+elif num_maças >= 24:
+    val_descon = num_maças * 0.80
+    print(f' Levando {num_maças} maçãs você vai pagar R${val_descon:.2f} reais.')
 
 print(' ===================')
