@@ -1,24 +1,24 @@
 '''
-Escreva um algoritmo que leia a quantidade atual, máxima e mínima de um produto em estoque e mostre sua quantidade média
+ Leia a quantidade atual, máxima e mínima de um produto em estoque e mostre sua quantidade média. - Ex. N° 26
 '''
-print(' =================')
-print(' | ESTOQUE TOTAL |')
-print(' =================')
 
-q_atual = int(input(' Informe a quantidade atual do produto em estoque: '))
-print(' ----')
-q_max = int(input(' Informe a quantidade máxima deste produto: '))
-print(' ----')
-q_min = int(input(' Informe a quantidade mínima deste produto: '))
-print(' -----------------')
+print(' =========================')
+print(' | ESTOQUE T. DO PRODUTO |')
+print(' =========================')
 
-q_med = (q_max + q_min) / 2 
+quant_atual = int(input(' Quantidade atual do produto em estoque: '))
+print(' - - - - - - - - - - - - -')
+quant_max = int(input(' Quantidade máxima do produto: '))
+print(' - - - - - - - - - - - - -')
+quant_min = int(input(' Quantidade mínima do produto: '))
+print(' = = = = = = = = = = = = =')
 
-if q_atual >= q_med:
-    print(' Não efetuar compra.')
+quant_med = (quant_max + quant_min) / 2 
+
+if quant_atual >= quant_med:
+    print(' Situação: Não efetuar compra.')
 else:
-    print(' Efetuar compra!')
+    print(' Situação: Efetuar compra!')
 
-    print(' A quantidade média deste produto é de {:.0f} unidades.'.format(q_med))
-
-print(' =================')
+print(f' A quantidade média deste produto é de {quant_med:.0f} unidades.')
+print(' =========================')
