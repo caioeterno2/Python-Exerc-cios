@@ -1,26 +1,29 @@
 '''
-
+ Leia o número da conta, saldo, débito, e crédito de um cliente, depois mostre se seu saldo e positivo ou não. - Ex. N° 25
 '''
+
 print(' =======================')
 print(' | SALDO T. DO CLIENTE |')
 print(' =======================')
 
-n_conta = float(input(' Informe o número de conta: '))
-print(' ----')
-saldo = float(input(' Informe seu saldo: R$'))
-print(' ----')
-debit = float(input(' Informe seu débito: -R$'))
-print(' ----')
-credi = float(input(' Informe seu crédito: R$'))
-print(' -----------------------')
+conta = float(input(' Número de conta: '))
+print(' - - - - - - - -')
+saldo = float(input(' Saldo: R$'))
+print(' - - - - - - - -')
+debito = float(input(' Débito: -R$'))
+print(' - - - - - - - -')
+credito = float(input(' Crédito: R$'))
+print(' = = = = = = = = = = = =')
 
-saldo_a = (saldo - debit) + credi
+saldo_atu = (saldo - debito) + credito
 
-if saldo_a >= 0:
-    resp = 'Saldo Positivo.'
+if saldo_atu >= 0:
+    resp = 'Positivo.'
+    print(f' Cliente da conta N*{conta:.0f}: Seu saldo é {resp}')
+    print(f' Saldo atual de R${saldo_atu:.2f} reais.')
 else:
-    resp = 'Saldo Negativo!'
+    resp = 'Negativo!'
+    print(f' Cliente da conta N*{conta:.0f}: Seu saldo é {resp}')
+    print(f' Saldo atual de R${saldo_atu:.2f} reais.')
 
-print(' Cliente da conta N*{:.0f}: {}'.format(n_conta,resp))
-print(' Seu saldo atual é de R${:.2f} reais.'.format(saldo_a))
 print(' =======================')
