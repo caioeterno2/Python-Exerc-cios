@@ -1,22 +1,22 @@
 '''
-Escreva um algoritmo que leia as horas de início e fim de um jogo de xadrez e calcule a duração do jogo 
+ Leia as horas de início e fim de um jogo de xadrez e calcule a duração do jogo. - Ex. N° 21 
 '''
+
 print(' ==================')
 print(' | JOGO DE XADREZ |')
 print(' ==================')
 
-inicio = float(input(' INICIO: '))
-print(' ----')
-fim = float(input(' FIM: '))
-print(' ------------------')
-
+inicio = int(input(' Início: '))
+print(' - - - -')
+fim = int(input(' Fim: '))
+print(' = = = = = = = = = ')
 
 if inicio > fim:
-    total = (24 - inicio) + fim
+    total_h = (24 - inicio) + fim
 elif inicio < fim:
-    total = fim - inicio
+    total_h = fim - inicio
 elif inicio == fim:
-    total = 24
+    total_h = 24
 
-print(' O total de horas jogadas foram: H{:.0f}'.format(total))
+print(f' Total de horas jogadas: {total_h} horas')
 print(' ==================')
