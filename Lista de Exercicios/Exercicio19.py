@@ -1,28 +1,27 @@
 '''
-
+ Leia o número de horas trabalhadas por um funcionario, seu salário hora e escreva o salário total junto às horas extras. - Ex. N° 22
 '''
+
 print(' =============================')
 print(' | SALÁRIO T. DO FUNCIONÁRIO |')
 print(' =============================')
 
-hr_sem = int(input(' Informe as horas trabalhadas por semana: '))
-print(' -----')
-sala_hr = float(input(' Informe o salário por hora: '))
-print(' -----------------------------')
+hora_sem = int(input(' Horas trabalhadas por semana: '))
+print(' - - - - - - - - - - - - - - -')
+salario_hr = float(input(' Salário por hora: R$'))
+print(' = = = = = = = = = = = = = = =')
 
-hr_total = hr_sem * 4
-
+hr_total = hora_sem * 4
 hr_extra = hr_total - 160 
 
-porc_50 = sala_hr * (50 / 100)
+porc_50 = salario_hr * (50 / 100)
+acrescimo = salario_hr + porc_50
+salario_extra = acrescimo * hr_extra
 
-sala = sala_hr * hr_total
+salario = salario_hr * (hr_total - hr_extra)
+salario_t = salario + salario_extra
 
-acres = hr_extra * porc_50
-
-sala_t = sala + acres
-
-print(' Total de horas trabalhadas no mês: {} horas'.format(hr_total))
-print(' Total de hora extra: {} horas'.format(hr_extra))
-print(' Salario total: {:.0f}'.format(sala_t))
+print(f' Total de horas trabalhadas no mês: {hr_total} horas')
+print(f' Total de hora extra: {hr_extra} horas')
+print(f' Salário total: R${salario_t:.2f} reais')
 print(' =============================')
