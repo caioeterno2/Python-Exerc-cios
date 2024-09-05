@@ -14,7 +14,7 @@ gol_1 = int(input(' Gols: '))
 print(' - - - -')
 
 time_2 = str(input(' 2* Time: '))
-gol_2 = int(input(' GOLS: '))
+gol_2 = int(input(' Gols: '))
 print(' = = = = = = = = = ')
 
 if gol_1 > gol_2:
