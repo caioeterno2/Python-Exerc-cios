@@ -1,26 +1,27 @@
 '''
-Escreva um algoritmo que leia 2 times seus gols e escreva o vencedor.
+ Leia 2 times seus gols e escreva o vencedor. - Ex. N° 32
 '''
+
 print(' ==================')
 print(' | PLACAR DO JOGO |')
 print(' ==================')
 
-print(' Informe os times que jogaram hoje e os gols marcados:')
-print(' ------------')
+print(' Informe os times que jogaram e os gols marcados:')
+print(' = = = = = = = = = ')
 
-tim1 = str(input(' TIME: '))
-gol1 = int(input(' GOLS: '))
-print(' -----')
+time_1 = str(input(' 1* Time: '))
+gol_1 = int(input(' Gols: '))
+print(' - - - -')
 
-tim2 = str(input(' TIME: '))
-gol2 = int(input(' GOLS: '))
-print(' ------------------')
+time_2 = str(input(' 2* Time: '))
+gol_2 = int(input(' GOLS: '))
+print(' = = = = = = = = = ')
 
-if gol1 > gol2:
-    print(' O vencedor da partida de hoje foi o {} com {} gols!'.format(tim1,gol1))
-elif gol2 > gol1:
-    print(' O vencedor da partida de hoje foi o {} com {} gols!'.format(tim2,gol2))
+if gol_1 > gol_2:
+    print(f' O vencedor da partida de hoje foi o {time_1} com {gol_1} gols!')
+elif gol_2 > gol_1:
+    print(f' O vencedor da partida de hoje foi o {time_2} com {gol_2} gols!')
 else:
-    print(' O resultado foi {} a {} dando empate.'.format(gol1,gol2))
+    print(f' O resultado foi {gol_1} a {gol_2} dando empate.')
 
 print(' ==================')
