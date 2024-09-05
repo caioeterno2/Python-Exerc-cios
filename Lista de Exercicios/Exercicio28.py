@@ -1,22 +1,24 @@
 '''
-Esccreva um algoritmo que leia 3 medidas e escreva se pode ou não formar um triângulo
+ Leia 3 medidas e escreva se pode ou não formar um triângulo. - Ex. N° 31
 '''
+
 print(' ========================')
 print(' | MEDIDAS DO TRIÂNGULO |')
 print(' ========================')
 
 print(' Informe o valor das medidas abaixo: ')
-print(' ------')
+print(' = = = = = = = = = = = = ')
 
 a = float(input(' A: '))
+print(' - - ')
 b = float(input(' B: '))
+print(' - - ')
 c = float(input(' C: '))
-print(' ------------------------')
+print(' = = = = = = = = = = = = ')
 
 if (a + b > c) and (a + c > b) and (b + c > a):
-    resp = True
+    print(f' As medidas {a}, {b} e {c} formam um triângulo.')
 else:
-    resp = False
-
-print(' Essas medidas formam um triângulo: {}.'.format(resp))
+    print(f' As medidas {a}, {b} e {c} não formam um triângulo.')
+    
 print(' ========================')
