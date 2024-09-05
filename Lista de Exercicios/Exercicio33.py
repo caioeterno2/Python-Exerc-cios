@@ -1,67 +1,68 @@
 '''
-Escreva um algoritmo que leia duas idades masc/ e duas femi/ e some a mais velha de um com a mais nova da outra
+ Leia duas idades masc/, duas femi/ e some a mais velha de um com a mais nova da outra. - Ex. N° 36
 '''
+
 print(' ===================')
 print(' | SOMA DAS IDADES |')
 print(' ===================')
 
-print(' Informe os nomes e idades: ')
-print(' ----------')
+print(' Informe nomes e idades: ')
+print(' = = = = = = = = = =')
 print(' MASCULINO')
-print(' ------')
+print(' - - - - -')
 
-nome_m1 = str(input(' Nome: '))
-idade_m1 = int(input(' Idade: '))
-print(' ------')
-nome_m2 = str(input(' Nome: '))
-idade_m2 = int(input(' Idade: '))
+nome_m1 = str(input(' 1* Nome: '))
+idade_m1 = int(input(' 1* Idade: '))
+print(' - - - - -')
+nome_m2 = str(input(' 2* Nome: '))
+idade_m2 = int(input(' 2* Idade: '))
 
-print(' -------------------')
+print(' - - - - - - - - - -')
 print(' FEMININO')
-print(' ------')
+print(' - - - - -')
 
-nome_f1 = str(input(' Nome: '))
-idade_f1 = int(input(' Idade: '))
-print(' ------')
-nome_f2 = str(input(' Nome: '))
-idade_f2 = int(input(' Idade: '))
-print(' -------------------')
+nome_f1 = str(input(' 1* Nome: '))
+idade_f1 = int(input(' 1* Idade: '))
+print(' - - - - -')
+nome_f2 = str(input(' 2* Nome: '))
+idade_f2 = int(input(' 2* Idade: '))
+print(' = = = = = = = = = =')
 
 if idade_m1 > idade_m2:
-    velho = nome_m1
-    novo = nome_m2
-    mais_velho = idade_m1
-    mais_novo = idade_m2
+    velho_nome = nome_m1
+    novo_nome = nome_m2
+    velho_idade = idade_m1
+    novo_idade = idade_m2
     if idade_f1 > idade_f2:
-        velha = nome_f1
-        nova = nome_f2
-        mais_velha = idade_f1
-        mais_nova = idade_f2
+        velha_nome = nome_f1
+        nova_nome = nome_f2
+        velha_idade = idade_f1
+        nova_idade = idade_f2
     elif idade_f2 > idade_f1:
-        velha = nome_f2
-        nova = nome_f1
-        mais_velha = idade_f2
-        mais_nova = idade_f1
+        velha_nome = nome_f2
+        nova_nome = nome_f1
+        velha_idade = idade_f2
+        nova_idade = idade_f1
 elif idade_m2 > idade_m1:
-    velho = nome_m2
-    novo = nome_m1
-    mais_velho = idade_m2
-    mais_novo = idade_m1
+    velho_nome = nome_m2
+    novo_nome = nome_m1
+    velho_idade = idade_m2
+    novo_idade = idade_m1
     if idade_f1 > idade_f2:
-      velha = nome_f1
-      nova = nome_f2
-      mais_velha = idade_f1
-      mais_nova = idade_f2
+      velha_nome = nome_f1
+      nova_nome = nome_f2
+      velha_idade = idade_f1
+      nova_idade = idade_f2
     elif idade_f2 > idade_f1:
-        velha = nome_f2
-        nova = nome_f1
-        mais_velha = idade_f2
-        mais_nova = idade_f1
+        velha_nome = nome_f2
+        nova_nome = nome_f1
+        velha_idade = idade_f2
+        nova_idade = idade_f1
 
-velho_nova = mais_velho + mais_nova
-velha_novo = mais_velha + mais_novo
+velho_nova = velho_idade + nova_idade
+velha_novo = velha_idade + novo_idade
 
-print(' A soma das idades do mais velho {} com a mais nova {} vai dar {:.0f} anos.'.format(velho,nova,velho_nova))
-print(' ---------')
-print(' E a soma das idades da mais velha {} com o mais novo {} vai dar {:.0f} anos.'.format(velha,novo,velha_novo))  
+print(f' A soma das idades do mais velho {velho_nome} com a mais nova {nova_nome} vai dar {velho_nova:.0f} anos.')
+print(' - - - - -')
+print(f' E a soma das idades da mais velha {velha_nome} com o mais novo {novo_nome} vai dar {velha_novo:.0f} anos.')  
 print(' ===================')  
