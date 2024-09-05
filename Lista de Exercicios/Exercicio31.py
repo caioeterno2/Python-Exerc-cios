@@ -1,12 +1,16 @@
 '''
-Escreva um algoritmo que realize um certo teste de mesa 
+ Realize um certo teste de mesa. - Ex. N° 34 
 '''
+
 print(' =================')
 print(' | TESTE DE MESA |')
 print(' =================')
 
 x = int(input(' X <- '))
+print(' - - -')
 y = int(input(' Y <- '))
+print(' = = = = = = = = =')
+
 z = (x * y) + 5
 
 if z <= 0:
@@ -16,6 +20,5 @@ elif z <= 100:
 else:
     resp = 'C'
 
-print(' -------')
-print(' Z <- {} / Resposta <- {}'.format(z,resp))
+print(f' Z <- {z} / Resposta <- {resp}')
 print(' =================')
